@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "../../OneDrive/Desktop/learn web"
+		},
+		{
+			"path": "../4.0 File Paths/Folder0"
+		},
+		{
+			"path": "../4.0 File Paths/Folder1"
+		},
+		{
+			"path": "../8.2 Responsiveness"
+		},
+		{
+			"path": "../10.0 Display Grid"
+		},
+		{
+			"path": "../10.2 Grid Placement"
+		},
+		{
+			"path": "../10.1 Grid Sizing"
+		},
+		{
+			"path": "../10.3 Mondrian Project"
+		},
+		{
+			"path": "../11.3 TinDog Project"
+		},
+		{
+			"path": "../DOM Challenge Starting Files"
+		},
+		{
+			"path": "../Dicee Challenge - Starting Files"
+		},
+		{
+			"path": "../Drum+Kit+Completed"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "learn web"
+	}
+}

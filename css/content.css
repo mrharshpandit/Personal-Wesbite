@@ -1,0 +1,319 @@
+/* .navbar {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+} for verticle line \\
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the Navbar */
+.navbar {
+    background-color: #2bafc2;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the list items */
+.nav-list li {
+    padding: 20px 50px;                       /* for updating the home ds ml dl horizontal size*/ 
+}
+
+/* Styling the links */
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Hover effect on the links */
+.nav-list li a:hover {
+    background-color: #1f8a99;
+    color: #fff;
+    padding: 14px 20px;
+    transition: 0.3s;
+}
+
+/* Content styling */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #eaeaea   ;
+    position: fixed;
+    /* top: 60px; */
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Allows scrolling if the content is too long */
+    padding-top: 20px;
+  }
+  
+  .sidebar h3 {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    text-align: left;
+    margin: 5px 0;
+  }
+  
+  .sidebar ul li a {
+    color: rgb(17, 16, 16);
+    padding: 10px;
+    text-decoration:black;
+    display: block;
+    text-decoration: solid;
+
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #0e6c7c; /* Hover effect */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    margin-left: 220px; /* Offset to the right, accounting for the sidebar width */
+    padding: 20px;
+  }
+  
+  .main-content section {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+
+  .main {
+    margin-left: 220px; /* Adjust this value as needed for spacing */
+    padding: 20px; /* Add padding for better spacing */
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.main p{
+    font-size: 16px;
+  
+    margin-top: 10px;
+    line-height: 1.5;
+
+
+}
+.main ul li{
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Center items vertically */
+    
+}
+
+.why{
+    margin-top: 40px;
+    line-height: 50px;
+
+}
+.why ul li{
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+.imgharsh {
+    text-align: center; /* Center all content within the .imgharsh container */
+}
+
+.team-header {
+    display: flex;
+    justify-content: center; /* Centers "Our Team" and "(only me as of now)" on the same line */
+    align-items: center;
+    gap: 10px; /* Adds space between the elements */
+}
+
+.profile-img {
+    border-radius: 100%; /* Make the image circular */
+    height: 190px;
+    width: 190px; /* Ensure the image is square */
+    margin: 20px auto; /* Center the image */
+    margin-bottom: 250px;
+}
+
+p {
+    text-align: center; /* Center the paragraph text */
+    margin-top: 10px; /* Adjust margin between image and text */
+}
+
+/*------------------------------------------------------- footer  ----------- */
+
+
+.footer {
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+  .foot{
+    margin-top: 10px;
+  }
+
+  #tutorial{
+    margin-top: 100;
+  }

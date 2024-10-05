@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cricket Analysis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Reset margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container to hold the iframe */
+        .container {
+            width: 90%;
+            max-width: 1140px; /* Ensures it doesn't get too wide */
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Maintain landscape ratio of iframe */
+        .container iframe {
+            width: 100%;
+            height: calc(100vw * 9 / 16); /* 16:9 aspect ratio for landscape */
+            max-height: 600px; /* Max height for large screens */
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Title styling */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        /* Adjust for smaller screens */
+        @media (max-width: 768px) {
+            .container iframe {
+                height: calc(100vw * 9 / 16); /* Ensures responsiveness on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Cricket Analysis</h1>
+        <iframe title="cricket analysis" 
+                src="https://app.powerbi.com/reportEmbed?reportId=c44b8f4f-4236-47fd-a962-8f3f61390792&autoAuth=true&ctid=8d46a076-d093-416d-a57b-8692cde13bf8" 
+                allowFullScreen="true">
+        </iframe>
+    </div>
+
+    <!-- External scripts (if any) -->
+    <script src="" async defer></script>
+</body>
+</html>

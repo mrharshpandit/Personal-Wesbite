@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Page Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Styling for the Navbar */
+        .navbar {
+            background-color: #2bafc2;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000; /* Keeps the navbar on top */
+        }
+
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list li {
+            padding: 20px 50px;
+        }
+
+        .nav-list li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .nav-list li a:hover {
+            background-color: #1f8a99;
+            color: #fff;
+            padding: 14px 20px;
+            transition: 0.3s;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #eaeaea;
+            position: fixed;
+            top: 60px; /* Adjust to account for the navbar height */
+            left: 0;
+            bottom: 0; /* Extend to the bottom */
+            overflow-y: auto; /* Allows scrolling if content is too long */
+            padding-top: 20px; /* Adds space at the top */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .sidebar h3 {
+            color: rgb(5, 5, 5);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            text-align: left;
+            margin: 5px 0;
+        }
+
+        .sidebar ul li a {
+            color: rgb(17, 16, 16);
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #0e6c7c; /* Hover effect */
+        }
+
+     
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="datascience.html">Data Science</a></li>
+            <li><a href="python.html">Python</a></li>
+            <li><a href="ml.html">Machine Learning</a></li>
+            <li><a href="ai.html">Deep Learning</a></li>
+            <li><a href="sql.html">SQL</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        
+        <ul>
+            <li><a href="#whatisds">What is Data Science</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Types">Types of Data</a></li>
+            <li><a href="#dataprocess">Data Process</a></li>
+            
+            
+        </ul>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        
+        // Function to handle mouse entering and leaving the sidebar
+        sidebar.addEventListener('mouseenter', function() {
+            sidebar.style.overflowY = 'auto'; // Enable sidebar scrolling on hover
+        });
+
+        sidebar.addEventListener('mouseleave', function() {
+            sidebar.style.overflowY = 'hidden'; // Disable sidebar scrolling when not hovering
+        });
+    </script>
+</body>
+</html>

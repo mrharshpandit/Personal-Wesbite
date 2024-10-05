@@ -1,0 +1,140 @@
+
+    h1 {
+color: #333;
+}
+p {
+color: #555;
+text-align:justify;
+margin-right: 200px;
+}
+  strong {
+    color: #000;
+    
+}
+
+h2{
+    margin-bottom: 20px; margin-top: 20px;
+}
+
+.image{
+    display: block;
+    margin: 0 auto;
+    max-width: 500px; /* Adjust the width as needed */
+    height: auto;
+    
+}
+.imaget{
+  
+    margin-left: 44%;
+    
+}
+
+/* code for (ds code ) -----------------------------------*/
+/* Jupyter Notebook-like styling for code cells */
+.code-cell {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+/* 
+.code-cell:before {
+    content: "In [ ]:";
+    color: #008000;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+} */
+
+.code-content {
+    padding-left: 60px; /* Offset for "In [ ]:" */
+    white-space: pre;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Styling for the "Copy" button */
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #006f99;
+}
+ /* code for output */
+
+ .output-cell {
+    background-color: #fdf6e3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.output-cell:before {
+    content: "Output [ ]:";
+    color: #d14;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.output-content {
+    padding-left: 60px; /* Offset for "Out [ ]:" */
+    white-space: pre;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    position: relative;
+}
+ /* code for code (ds) */
+
+ .code-container, .output-container {
+    color: black; /* Light text */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Allows long lines to wrap */
+}
+
+.comment {
+    color: blue; /* b;ue color for comments */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6272a4; /* Button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4d4d4d; /* Darker on hover */
+}
+
+

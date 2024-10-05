@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/clock.css" />
+  <link rel="icon"
+    href="https://img.freepik.com/premium-vector/alarm-clock-yellow-wakeup-time-mint-background-flat-style-illustration-clock-logo-design_561142-47.jpg?w=2000" />
+  <title>Alarm Clock</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <p class="title">Digital clock</p>
+    <div class="darklightMode">
+      <div class="button" id="dl_mode_btn">
+        <div class="ball" id="dl_mode_btn_ball"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="cards-area">
+      <div class="hour-card card" id="hour">00</div>
+      <div class="min-card card" id="min">00</div>
+      <div class="sec-card card" id="sec">00</div>
+      <div class="ampm-card card" id="ampm">AM</div>
+    </div>
+    <div class="set_alarm">
+      <input type="number" max="12" id="hourset" class="alarm_input" placeholder="Hour" />
+      <input type="number" class="alarm_input" max="59" id="minuteset" placeholder="Minute" />
+      <input type="number" class="alarm_input" id="secondset" max="59" placeholder="Second" />
+    </div>
+
+    <div class="setbtn">
+      <button class="btn" id="setAlarm">Set Alarm</button>
+      <button class="btn" id="stopAlarm">Stop Alarm</button>
+    </div>
+    <div class="notify-card" id="notify">
+      <lord-icon id="warn" src="https://cdn.lordicon.com/vyukcgvf.json" trigger="loop"
+        style="width: 100px; height: 100px">
+      </lord-icon>
+
+      <lord-icon id="check" src="https://cdn.lordicon.com/ivayzoru.json" trigger="loop"
+        colors="outline:#000000,primary:#000000,secondary:#30e849" stroke="60" style="width: 100px; height: 100px">
+      </lord-icon>
+
+      <p class="warn-text" id="warn_texts"></p>
+    </div>
+
+    <div style > 
+      <a href="./clock2.html" class="styled-link">
+        <h4>Click here for another Clock</h4>
+    </a>
+        </div>
+  </div>
+
+
+
+  <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+  <script src="https://kit.fontawesome.com/4f6c794eb6.js" crossorigin="anonymous"></script>
+  <script src="./js/clock.js"></script>
+</body>
+
+</html>

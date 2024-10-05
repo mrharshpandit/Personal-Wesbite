@@ -1,0 +1,60 @@
+
+        .card {
+            max-width: 300px; /* Set a max width for the card */
+            margin: 10px; /* Optional: adds some space between cards */
+        }
+        
+        .card-img-top {
+            height: 150px; /* Set a specific height for the images */
+            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Ensure it doesn't overflow the card width */
+            object-fit: contain; /* This will maintain aspect ratio without cropping */
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradient Background */
+            font-family: Arial, sans-serif;
+            color: #333; /* Text Color */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex; /* Center cards */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Scale on hover */
+        }
+
+        .card h3 {
+            margin: 10px; /* Margin for title */
+            font-size: 1.5em; /* Title font size */
+        }
+
+        .card a {
+            display: block; /* Block display for link */
+            text-align: center; /* Center the link text */
+            padding: 10px; /* Padding for link */
+            background-color: #007BFF; /* Link background color */
+            color: white; /* Link text color */
+            text-decoration: none; /* No underline */
+            border-radius: 5px; /* Rounded corners for link */
+            margin: 10px; /* Margin for link */
+        }
+        
+        
+ .project-card {
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+.card a:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+#clockimg{
+   max-width:100vh;
+}
